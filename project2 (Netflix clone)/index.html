@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netflix-clone</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-  </head>
-  <body>
-    <div class="main">
-      <nav>
-        <span><img src="/assets/images/logo.svg" /></span>
-        <div class="flex">
-          <button class="btn">English</button>
-          <button class="btn btn-red-sm">Sign In</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix clone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main">
+    <header>
+      <div class="nav">
+        <div class="logo">
+          <img src="/project2 (Netflix clone)/assets/images/logo.svg" alt="Netflix logo">
         </div>
-      </nav>
-      <div class="box"></div>
-      <div class="hero">
-        <span class="hero-1">Unlimited movies,</span>
-        <span class="hero-2">TV shows and more</span>
-        <span class="hero-3">Starts at ₹149. Cancel at any time.</span>
-        <span class="hero-4"
-          >Ready to watch? Enter your email to create or restart your
-          membership.</span
-        >
-
-        <div>
-          <input tpye="text" placeholder="Enter Email Address" />
-          <button class="btn btn-red">Get Started</button>
+        <div class="nav-button">
+          <select class="btn1 poppins-light">
+            <option>English</option>
+            <option>Hindi</option>
+          </select>
+          <button class="btn2 poppins-light">Sign in</button>
+        </div>
+      </div>
+    </header>
+    <div class="bg"></div>
+    <div class="main-data">
+      <div class="main-txt">
+        <h1 class="txt1 poppins-extrabold">Unlimited movies,</h1>
+        <h1 class="txt1 poppins-extrabold">TV shows and more</h1>
+        <p class="txt2 poppins-light">Starts at ₹149. Cancel at any time.</p>
+        <h3 class="txt3 poppins-light">Ready to watch? Enter your email to create or restart your membership.</h3>
+      </div>
+      <div class="main-buttons">
+        <input placeholder="Email address" class="btn3 poppins-light">
+        <button class="btn4 poppins-light">Get Started</button>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="table">
+    <div class="content">
+      <div class="label poppins-light">
+        <h2>More reasons to join</h2>
+      </div>
+      <div class="grid">
+        <div class="cell poppins-light">
+          <h3>Enjoy on your TV</h3>
+          <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        </div>
+        <div class="cell poppins-light">
+          <h3>Download your shows to watch offline</h3>
+          <p>Save your favourites easily and always have something to watch.</p>
+        </div>
+        <div class="cell poppins-light">
+          <h3>Watch everywhere</h3>
+          <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+        </div>
+        <div class="cell poppins-light">
+          <h3>Create profiles for kids</h3>
+          <p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
         </div>
       </div>
     </div>
-    <div class="seperation"></div>
-    
-    <div class="remd">
-      <div class="remd-table">
-        <div class="remd-title">
-          <h2>More reasons to join</h2>
-        </div>
-        <div class="remd-boxes">
-          <div class="remd-b1"></div>
-        </div>
-      </div>
-    </div>
-  </body>
+  </div>
+  <footer>
+    <p>Netflix India</p>
+  </footer>
+</body>
 </html>
