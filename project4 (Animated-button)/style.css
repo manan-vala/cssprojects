@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: poppins;
+  height: 100vh;
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.container {
+  height: 32px;
+  width: 32px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container a {
+  height: 32px;
+  width: 32px;
+}
+
+.container::before {
+  content: attr(social-name);
+  position: absolute;
+  background-color: var(--colorcode);
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  transform: translateY(-30px) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(0.67, 0.33, 0, 1.77);
+}
+
+.container:hover {
+  background-color: var(--colorcode);
+  fill: white;
+}
+
+.container:hover svg {
+  fill: white;
+}
+
+.container::after{
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid var(--colorcode);
+  transform: translateY(0) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(0.67, 0.33, 0, 1.77);
+}
+
+.container:hover::before{
+  transform: translateY(-65px) rotate(0);
+  opacity: 1;
+}
+
+.container:hover::after{
+  transform: translateY(-42px) rotate(0);
+  opacity: 1;
+}
